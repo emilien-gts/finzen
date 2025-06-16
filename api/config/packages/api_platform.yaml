@@ -1,0 +1,9 @@
+api_platform:
+    title: Finzen
+    version: 1.0.0
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        normalization_context:
+            ignored_attributes: [ 'trace', 'file', 'line', 'code', 'message', 'traceAsString' ]
