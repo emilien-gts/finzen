@@ -1,0 +1,12 @@
+parameters:
+    level: 5
+    paths:
+        - src
+        - tests
+    ignoreErrors:
+        - '#Call to an undefined method .*::.*\(\)#'
+        - '#Property .* does not accept array#'
+        - '#Parameter \#\d+ \$.* of .* expects array, mixed given#'
+        - '#has no return typehint specified#'
+        - '#Call to function method_exists\(\) with .+Dotenv.+bootEnv.+will always evaluate to true#'
+    reportUnmatchedIgnoredErrors: false
